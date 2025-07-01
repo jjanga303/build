@@ -1,5 +1,9 @@
 version: 0.2
+
 phases:
+  install:
+    commands:
+      - pip install -r python/requirements.txt
   build:
     commands:
-      - npm run build
+      - python3 python/hello.py
